@@ -8,6 +8,11 @@ $(function () {
 
    // scroll suave interno
    const menuItems = document.querySelectorAll('.color-header a[href^="#"]');
+   const buttonGaleria = document.querySelector('#buttonGaleria');
+   const buttonSobre = document.querySelector('#buttonSobre');
+
+   buttonSobre.addEventListener('click', scrollToIdOnclick);
+   buttonGaleria.addEventListener('click', scrollToIdOnclick);
    //funcao para adicionar e remover classe ativo dos elementos do menu.
    menuItems.forEach((item) => {
      item.addEventListener('click', scrollToIdOnclick);
